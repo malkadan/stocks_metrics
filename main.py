@@ -10,6 +10,7 @@ import pyspark.sql.functions as F
 from pyspark.sql.functions import lag, avg, stddev, row_number
 from pyspark.sql.types import StructType, StructField, StringType, DoubleType, FloatType
 
+
 ## @params: [JOB_NAME]
 args = getResolvedOptions(sys.argv, ['JOB_NAME', 'S3_INPUT_PATH', 'S3_OUTPUT_PATH'])
 sc = SparkContext()
